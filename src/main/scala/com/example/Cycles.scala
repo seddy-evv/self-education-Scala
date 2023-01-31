@@ -1,4 +1,4 @@
-package net.scalatutorial
+package com.example
 
 // While
 object WhileDemo {
@@ -148,7 +148,7 @@ object Alternative {
     def factorial5(n: Int): BigInt = {
       assert(n >= 0,"error")
       if (n == 0) 1
-      else (BigInt(1) to BigInt(n)).reduce(_ * _)
+      else (BigInt(1) to BigInt(n)).product
     }
     println(factorial5(10))
     // product
