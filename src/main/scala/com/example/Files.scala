@@ -12,8 +12,10 @@ object Files {
     writer.write("This is simple text file.");
     writer.close();
     // Read file
-    Source.fromFile(filePath).foreach {
+    val txtSource = Source.fromFile(filePath)
+    txtSource.foreach {
       print
     }
+    txtSource.close()
   }
 }
