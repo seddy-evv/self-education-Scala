@@ -14,12 +14,12 @@ class PublicDemo {
     }
 
     class InnerDeveloperClass {
-      writeCode();
+      writeCode()
     }
 
   }
 
-  (new Developer).writeCode();    // Must work - method is public
+  (new Developer).writeCode()   // Must work - method is public
 }
 
 // protected
@@ -31,7 +31,7 @@ package ProtectedDemo{
   }
 
   class Developer extends Specialist{
-    makeJob();
+    makeJob()
   }
 
   class Animal{
@@ -44,12 +44,12 @@ class PrivateDemo {
 
   class Developer {
     private def sleep() {
-      println("Developer sleeps at home...");
+      println("Developer sleeps at home...")
     }
 
 
     class InnerDeveloperClass{
-      sleep();
+      sleep()
     }
   }
 
@@ -61,13 +61,13 @@ package project {
   package specialists {
 
     class Developer {
-      private[specialists] var specialty = "Java Developer";
-      private[project] var position = "Team Lead";
-      private[this] var hobby = "Sport";
+      private[specialists] var specialty = "Java Developer"
+      private[project] var position = "Team Lead"
+      private[this] var hobby = "Sport"
 
       def doJob(developer: Developer) {
-        println(developer.specialty);
-        println(developer.position);
+        println(developer.specialty)
+        println(developer.position)
         //        println(developer.hobby); // Error - not accessible
       }
     }
