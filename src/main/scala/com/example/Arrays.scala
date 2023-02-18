@@ -10,31 +10,31 @@ object Arrays {
     // OR
     //
     // var stringArray = new Array[String](10);
-    val integerArray = Array(10, 20, 30, 40, 50);
+    val integerArray = Array(10, 20, 30, 40, 50)
     println(integerArray(1))
-    println("integerArray: ");
+    println("integerArray: ")
     for (arrayElement <- integerArray) {
-      print(arrayElement + " ");
+      print(arrayElement + " ")
     }
 
-    println();
+    println()
 
-    var integerArrayTotalSum = 0;
+    var integerArrayTotalSum = 0
 
     for (arrayElement <- integerArray) {
-      integerArrayTotalSum += arrayElement;
+      integerArrayTotalSum += arrayElement
     }
 
-    println("Total sum of array elements is: " + integerArrayTotalSum);
+    println("Total sum of array elements is: " + integerArrayTotalSum)
 
     // Multidimensional arrays
     // var twoDimensionalArray = ofDim[String](2,2);
-    val twoDimensionalArray = ofDim[String](5, 5);
+    val twoDimensionalArray = ofDim[String](5, 5)
 
     println("Filling twoDimensionalArray...")
     for(i <- 0 to 4){
       for(j <- 0 to 4){
-        twoDimensionalArray(i)(j) = "*";
+        twoDimensionalArray(i)(j) = "*"
       }
     }
 
@@ -42,42 +42,42 @@ object Arrays {
 
     for(i <- 0 to 4){
       for(j <- 0 to 4){
-        print(twoDimensionalArray(i)(j) + " ");
+        print(twoDimensionalArray(i)(j) + " ")
       }
       println()
     }
     // Merging arrays
-    val integerArrayOne = Array(2, 4, 6, 8);
-    val integerArrayTwo = Array(1, 3, 5, 7);
+    val integerArrayOne = Array(2, 4, 6, 8)
+    val integerArrayTwo = Array(1, 3, 5, 7)
 
     println("integerArrayOne: ")
     for (arrayElement <- integerArrayOne) {
-      print(arrayElement + " ");
-    }
-
-    println();
-
-    println("integerArrayTwo: ")
-    for (arrayElement <- integerArrayTwo) {
-      print(arrayElement + " ");
-    }
-
-    println();
-
-    val integerConcatenatedArray = concat(integerArrayOne, integerArrayTwo);
-
-    println("integerConcatenatedArray: ")
-    for (arrayElement <- integerConcatenatedArray) {
-      print(arrayElement + " ");
+      print(arrayElement + " ")
     }
 
     println()
 
-    val sortedIntegerConcatenatedArray = integerConcatenatedArray.sorted;
+    println("integerArrayTwo: ")
+    for (arrayElement <- integerArrayTwo) {
+      print(arrayElement + " ")
+    }
+
+    println()
+
+    val integerConcatenatedArray = concat(integerArrayOne, integerArrayTwo)
+
+    println("integerConcatenatedArray: ")
+    for (arrayElement <- integerConcatenatedArray) {
+      print(arrayElement + " ")
+    }
+
+    println()
+
+    val sortedIntegerConcatenatedArray = integerConcatenatedArray.sorted
 
     println("sortedIntegerConcatenatedArray: ")
     for (arrayElement <- sortedIntegerConcatenatedArray) {
-      print(arrayElement + " ");
+      print(arrayElement + " ")
     }
   }
 }
