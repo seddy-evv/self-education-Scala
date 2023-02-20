@@ -1,11 +1,11 @@
 package com.example
 
 class Developer(val name: String, val specialty: String) {
-  var developerName: String = name;
-  var developerSpecialty: String  = specialty;
+  var developerName: String = name
+  var developerSpecialty: String  = specialty
 
   def writeCode() {
-    println(this.developerSpecialty + " writes code.");
+    println(this.developerSpecialty + " writes code.")
   }
   // You must always specify a type for method parameters,
   // the return type the compiler can determine
@@ -24,12 +24,12 @@ class Developer(val name: String, val specialty: String) {
 
 object DeveloperDemo {
   def main(args: Array[String]) {
-    val javaScalaDeveloper = new Developer("Alex", "Java/Scala Developer");
+    val javaScalaDeveloper = new Developer("Alex", "Java/Scala Developer")
 
 
-    println("Developer name: " + javaScalaDeveloper.developerName);
-    println("Developer specialty: " + javaScalaDeveloper.developerSpecialty);
-    javaScalaDeveloper.writeCode();
+    println("Developer name: " + javaScalaDeveloper.developerName)
+    println("Developer specialty: " + javaScalaDeveloper.developerSpecialty)
+    javaScalaDeveloper.writeCode()
   }
 }
 
@@ -37,27 +37,27 @@ object DeveloperDemo {
 
 class Program(val name: String) {
 
-  var programName: String = name;
+  var programName: String = name
 
   def startWork() {
-    println("Hello, I'm a simple program. My name is: " + this.name);
+    println("Hello, I'm a simple program. My name is: " + this.name)
   }
 }
 
 class SecuredProgram(override val name: String, val securityCertificate: String) extends Program(name) {
   override def startWork() {
-    println("Hello, I'm a secured program. My name is: " + this.name);
-    println("I have security certificate: " + this.securityCertificate);
+    println("Hello, I'm a secured program. My name is: " + this.name)
+    println("I have security certificate: " + this.securityCertificate)
   }
 }
 
 object ProgramDemo {
   def main(args: Array[String]) {
-    val program = new Program("Simple Program");
-    program.startWork();
+    val program = new Program("Simple Program")
+    program.startWork()
 
-    val securedProgram = new SecuredProgram("Secured Program", "Security Certificate");
-    securedProgram.startWork();
+    val securedProgram = new SecuredProgram("Secured Program", "Security Certificate")
+    securedProgram.startWork()
   }
 }
 
@@ -66,7 +66,7 @@ object Squaring {
 
   implicit class Squarer(x: Int) {
     def numberSquaring[A](f: => A): Unit = {
-      println(x + " * " + x + " = " + x * x);
+      println(x + " * " + x + " = " + x * x)
     }
   }
 }
@@ -75,7 +75,7 @@ import Squaring._
 
 object SquaringDemo {
   def main(args: Array[String]) {
-    100 numberSquaring();
+    100 numberSquaring()
   }
 }
 
