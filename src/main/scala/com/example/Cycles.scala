@@ -3,11 +3,11 @@ package com.example
 // While
 object WhileDemo {
   def main(args: Array[String]) {
-    var counter: Integer = 1;
+    var counter: Integer = 1
 
     while (counter <=5 ) {
       println(counter)
-      counter += 1;
+      counter += 1
     }
   }
 }
@@ -19,12 +19,12 @@ object WhileDemo {
 // while( LOGICAL EXPRESSION );
 object DoWhileDemo {
   def main(args: Array[String]) {
-    var counter: Integer = 1;
+    var counter: Integer = 1
 
     do {
-      println(counter);
-      counter += 1;
-    } while (counter < 5);
+      println(counter)
+      counter += 1
+    } while (counter < 5)
   }
 }
 
@@ -35,14 +35,14 @@ object DoWhileDemo {
 object ForLoopDemo {
   def main(args: Array[String]) {
     for (counter <- 0 to 5){
-      println(counter);
+      println(counter)
     }
     println()
     for (counter <- 0 until  4){
-      println(counter);
+      println(counter)
     }
     println()
-    for (counter <- 0 to (10,2))println(counter);
+    for (counter <- 0 to (10,2))println(counter)
     println()
     // Nested cycles
     val col1 = List("a", "b", "c")
@@ -70,10 +70,10 @@ object ForLoopDemo {
 
 object ForLoopCollectionDemo {
   def main(args: Array[String]) {
-    val integerList = List(10, 20, 30, 40, 50);
+    val integerList = List(10, 20, 30, 40, 50)
 
     for (counter <- integerList ){
-      println(counter);
+      println(counter)
     }
   }
 }
@@ -87,13 +87,13 @@ object ForLoopCollectionDemo {
 
 object ForLoopYieldDemo {
   def main(args: Array[String]) {
-    val integerList = List(10, 20, 30, 40, 50);
+    val integerList = List(10, 20, 30, 40, 50)
 
     val filteredValue = for {counter  <- integerList if counter!= 10; if counter < 50}
-      yield counter;
+      yield counter
 
     for(counter <- filteredValue){
-      println(counter);
+      println(counter)
     }
   }
 }
@@ -103,13 +103,13 @@ object ForLoopYieldDemo {
 import scala.util.control.Breaks
 object BreakLoopDemo {
   def main(args: Array[String]) {
-    val loop = new Breaks;
+    val loop = new Breaks
 
     loop.breakable({
       for(counter <- 1 to 10){
-        println(counter);
+        println(counter)
         if(counter == 5){
-          loop.break;
+          loop.break
         }
       }
     })
