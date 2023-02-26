@@ -4,9 +4,9 @@ package com.example
 
 object Extractor {
   def main(args: Array[String]) {
-    println(apply("Eugene Suleimanov", "Java/Scala Developer"));
-    println(unapply("Ivan Ivanov: C++ Developer"));
-    println(unapply("Kolya Nikolaev - PHP Developer"));
+    println(apply("Eugene Suleimanov", "Java/Scala Developer"))
+    println(unapply("Ivan Ivanov: C++ Developer"))
+    println(unapply("Kolya Nikolaev - PHP Developer"))
   }
 
   def apply(name: String, specialty: String): String = {
