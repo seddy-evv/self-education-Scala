@@ -9,7 +9,7 @@ package com.example
 
 object alert {
   def printAlertMessage(): Unit = {
-    println("ALERT!!!");
+    println("ALERT!!!")
     // Infix, method as operator
     Console println "Hi"
     // In Scala all operators are methods !
@@ -18,9 +18,9 @@ object alert {
 
 object multiplication {
   def multipleIntegers(first: Int, second: Int): Int = {
-    val result = first * second;
+    val result = first * second
 
-    result;
+    result
   }
 }
 
@@ -30,20 +30,21 @@ import multiplication._
 
 object FunctionsDemo {
   def main(args: Array[String]):Unit= {
-    val firstInteger = 100;
-    val secondInteger = 7;
+    val firstInteger = 100
+    val secondInteger = 7
 
-    val multiplicationResult = multipleIntegers(firstInteger, secondInteger);
+    val multiplicationResult = multipleIntegers(firstInteger, secondInteger)
 
-    println(firstInteger + " * " + secondInteger + " = " + multiplicationResult);
+    println(firstInteger + " * " + secondInteger + " = " + multiplicationResult)
 
-    printAlertMessage();
+    printAlertMessage()
 
     // ??? returns nothing
     def f(a1: Int, a2: String): String = ???
 
     // Recursion
     val fac = (x: Int) => {
+      @scala.annotation.tailrec
       def factorial(x: Int, accum: Int): Int = if (x == 1) accum else factorial(x-1, accum*x)
       factorial(x,1)
     }
@@ -77,6 +78,4 @@ object FunctionsDemo {
     }
     println(addSqr(2, 3))
   }
-
-
 }
