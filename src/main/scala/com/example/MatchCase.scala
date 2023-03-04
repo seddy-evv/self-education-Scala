@@ -2,10 +2,10 @@ package com.example
 
 object MatchCase {
   def main(args: Array[String]) {
-    println(specialtyTest("Java"));
-    println(specialtyTest("C++"));
-    println(specialtyTest("Scala"));
-    println(specialtyTest("PHP"));
+    println(specialtyTest("Java"))
+    println(specialtyTest("C++"))
+    println(specialtyTest("Scala"))
+    println(specialtyTest("PHP"))
   }
 
   def specialtyTest(specialty: String): String = specialty match {
