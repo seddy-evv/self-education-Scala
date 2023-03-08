@@ -6,17 +6,17 @@ package com.example
 
 object Traits {
   trait BaseTrait {
-    def isScalaDeveloper (x: String): Boolean = x.equals("Scala Developer");
+    def isScalaDeveloper (x: String): Boolean = x.equals("Scala Developer")
   }
 
   class DeveloperNew(sSpecialty: String) extends BaseTrait {
-    var specialty:String = sSpecialty;
+    var specialty:String = sSpecialty
   }
   def main(args: Array[String]) {
-    val scalaDeveloper = new DeveloperNew("Scala Developer");
-    val javaDeveloper = new DeveloperNew("Java Developer");
+    val scalaDeveloper = new DeveloperNew("Scala Developer")
+    val javaDeveloper = new DeveloperNew("Java Developer")
 
-    println(scalaDeveloper.isScalaDeveloper(scalaDeveloper.specialty));
-    println(javaDeveloper.isScalaDeveloper(javaDeveloper.specialty));
+    println(scalaDeveloper.isScalaDeveloper(scalaDeveloper.specialty))
+    println(javaDeveloper.isScalaDeveloper(javaDeveloper.specialty))
   }
 }
