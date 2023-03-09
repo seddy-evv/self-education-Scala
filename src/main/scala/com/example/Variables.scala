@@ -12,17 +12,17 @@ object Variables {
 
   def main(args: Array[String]){
     // Mutable variables var
-    var someVariableVar : String = "Some String";
+    var someVariableVar : String = "Some String"
     someVariableVar = "22"
     // Immutable variables val
-    val someVariableVal : String = "Some String";
+    val someVariableVal : String = "Some String"
     // The type can be not specified and the compiler will determine it itself
-    val simpleAutoDetectedString = "This is simple String";
-    var simpleAutoDetectedInteger = 200800;
+    val simpleAutoDetectedString = "This is simple String"
+    var simpleAutoDetectedInteger = 200800
     // Multiple assignment
-    val (simpleInteger: Int, simpleString: String) = (100500, "String");
-    val (simpleAutoInteger, simpleAutoString) = (100500, "String");
-    simpleProgram();
+    val (simpleInteger: Int, simpleString: String) = (100500, "String")
+    val (simpleAutoInteger, simpleAutoString) = (100500, "String")
+    simpleProgram()
     // Blocks
     val v3 = {
       val v1 = 1
@@ -31,9 +31,9 @@ object Variables {
     }
     println(v3)
     // Type Unit, equals type void in other languages
-    val v4 = {
+    val v4: Unit = {
     }
-    val v5 = ()
+    val v5: Unit = ()
     println(v4)
     println(v4.isInstanceOf[Unit])
     println(v5.getClass)
@@ -52,22 +52,22 @@ object Variables {
   }
   // Program example
   def simpleProgram() {
-    var simpleInteger: Int = 100500;
-    val simpleString: String = "This is simple String";
-    var simpleAutoDetectedInteger = 200800;
-    val simpleAutoDetectedString = "This is simple auto detected String";
+    val simpleInteger: Int = 100500
+    val simpleString: String = "This is simple String"
+    val simpleAutoDetectedInteger = 200800
+    val simpleAutoDetectedString = "This is simple auto detected String"
 
-    println("simpleInteger:");
-    println(simpleInteger);
+    println("simpleInteger:")
+    println(simpleInteger)
 
-    println("simpleString:");
-    println(simpleString);
+    println("simpleString:")
+    println(simpleString)
 
-    println("simpleAutoDetectedInteger:");
-    println(simpleAutoDetectedInteger);
+    println("simpleAutoDetectedInteger:")
+    println(simpleAutoDetectedInteger)
 
-    println("simpleString:");
-    println(simpleAutoDetectedString);
+    println("simpleString:")
+    println(simpleAutoDetectedString)
   }
 
 }
